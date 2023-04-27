@@ -26,3 +26,5 @@ export const handleGameState = () => {
       return;
   }
 };
+
+gameState.onclick = handleGameState;

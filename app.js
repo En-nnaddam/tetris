@@ -8,7 +8,7 @@ import {
 } from "./config.js";
 import Field from "./Field.js";
 import { getFps } from "./fps.js";
-import { handleGameState, gameState } from "./gameState.js";
+import { gameState } from "./gameState.js";
 import {
   getCurrentShape,
   getNextShape,
@@ -24,8 +24,6 @@ let gameFrames = 1;
 getNextShape().draw(nextShapeContext, { x: 1, y: 1 });
 
 const isGameOver = (field, shape) => field[0][shape.position.x].length > 0;
-
-gameState.onclick = handleGameState;
 
 const restart = document.getElementById("restart");
 const restartGame = () => {
