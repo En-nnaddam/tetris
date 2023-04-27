@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tetris</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <canvas id="canvas" width="200" height="400"></canvas>
+    <h2>Score:<span id="score">0</span></h2>
+    <h2 id="game-over">Game Over</h2>
+    <div id="next-shape">
+      <canvas id="next-shape-canvas" width="100" height="100"></canvas>
+      <p>next shape</p>
+    </div>
+    <button id="restart" class="btn">RESTART</button>
+    <button id="game-state" class="btn">START</button>
+    <div id="instructions">
+      <h3>instructions :</h3>
+      <p><kbd class="kbd">left</kbd> Move Left</p>
+      <p><kbd class="kbd">right</kbd> Move Right</p>
+      <p><kbd class="kbd">bottom</kbd> Move Bottom</p>
+      <p><kbd class="kbd">top</kbd> Move Top</p>
+      <p><kbd class="kbd">1</kbd> Turn Left</p>
+      <p><kbd class="kbd">2</kbd> Turn Right</p>
+    </div>
+    <script src="./app.js" type="module"></script>
+  </body>
+</html>
